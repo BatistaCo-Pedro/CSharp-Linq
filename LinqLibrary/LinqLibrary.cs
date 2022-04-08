@@ -4,7 +4,7 @@ using System.Linq;
 namespace LinqLibrary;
 public static class OwnLinq
 {
-    public static void TestMethod(char contain_string, String[] list)
+    public static void ReturnIfContains(String[] list, char contain_string)
     {
         var result = from item in list
                      where item.Contains(contain_string)
