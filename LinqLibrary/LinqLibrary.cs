@@ -1,8 +1,17 @@
-﻿namespace LinqLibrary;
-public static class Test
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+namespace LinqLibrary;
+public static class OwnLinq
 {
-    public static String testMethod(this string str)
+    public static void TestMethod(char contain_string, String[] list)
     {
-        return str;
+        var result = from item in list
+                     where item.Contains(contain_string)
+                     select item;
+        foreach (var item in result)
+        {
+            System.Console.WriteLine(item);
+        }
     }
 }
