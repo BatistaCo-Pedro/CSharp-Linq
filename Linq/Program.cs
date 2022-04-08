@@ -4,23 +4,14 @@ using System.Linq;
 using LinqLibrary;
 class Linq
 {
-    static void ProcessString(string s)
-    {
-        if (s == null)
-        {
-            throw new ArgumentNullException(paramName: nameof(s), message: "Parameter can't be null");
-        }
-    }
     public static void Main(string[] args)
     {
-        try {
-            String[] str = { "Hello", "World", "Linq", "CSharp" };
-            char contains = Convert.ToChar(Console.ReadLine());
-            OwnLinq.ReturnIfContains(str, contains);
+        String[] str = { "Hello", "World", "Linq", "CSharp" };
+        char contains;
+        Console.WriteLine("Enter a character to search for: ");
+        while(!char.TryParse(Console.ReadLine(), out contains)){
+            Console.WriteLine("Invalid input. Please enter a character: ");
         }
-        catch (ArgumentNullException e)
-        {
-            Console.WriteLine(e.Message);
-        }
+        OwnLinq.ReturnIfContains(str, contains);
     }
 }

@@ -11,7 +11,19 @@ public static class OwnLinq
                      select item;
         foreach (var item in result)
         {
-            System.Console.WriteLine(item);
+            Console.WriteLine(item);
         }
     }
+
+    public static String ReturnIfContainsBetter(IEnumerable<String> list, char contain_string)
+    {
+        var result = list.Where(item => item.ToString().Contains(contain_string));
+        foreach (var item in result)
+        {
+            return item;
+        }
+        return "";
+    }
+
+    
 }
