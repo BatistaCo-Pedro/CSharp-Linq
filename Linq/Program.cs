@@ -12,6 +12,10 @@ class Linq
         while(!char.TryParse(Console.ReadLine(), out contains)){
             Console.WriteLine("Invalid input. Please enter a character: ");
         }
-        OwnLinq.ReturnIfContains(str, contains);
+        String[] tst = OwnLinq.ReturnIfContains<String[]>(str, contains);
+        foreach (var item in tst)
+        {
+            Console.WriteLine(item);
+        }
     }
 }

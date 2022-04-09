@@ -1,29 +1,21 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 namespace LinqLibrary;
+
 public static class OwnLinq
 {
-    public static void ReturnIfContains(String[] list, char contain_string)
+    public static String[] ReturnIfContains<T>(T collection, char contains) where T : IEnumerable
     {
-        var result = from item in list
-                     where item.Contains(contain_string)
-                     select item;
-        foreach (var item in result)
+        String[] result = new String[0];
+        foreach (var item in collection)
         {
-            Console.WriteLine(item);
+            if (item.ToString().Contains(contains))
+            {
+                result = result.Concat(new String[] { item.ToString() }).ToArray();
+            }
         }
+        return result;
     }
-
-    public static String ReturnIfContainsBetter(IEnumerable<String> list, char contain_string)
-    {
-        var result = list.Where(item => item.ToString().Contains(contain_string));
-        foreach (var item in result)
-        {
-            return item;
-        }
-        return "";
-    }
-
-    
 }
