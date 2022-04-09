@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections;
-using System.Diagnostics;
-using System.Collections.Generic;
-using System.Linq;
+﻿global using System;
+global using System.Collections;
+global using System.Diagnostics;
+global using System.Collections.Generic;
+global using System.Linq;
 namespace LinqLibrary;
 
 public static class LinqSearch
