@@ -25,8 +25,8 @@ public static class LinqSearch
 
         return result;
     }
+    public static List<String> ReturnIfContains<T>(T collection, string contains) where T : IEnumerable
 
-    public static List<String> ReturnIfContainsRange<T>(T collection, string contains) where T : IEnumerable
     {
         var watch = new Stopwatch();
         watch.Start();
