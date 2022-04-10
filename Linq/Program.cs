@@ -9,6 +9,8 @@ class Linq
 {
     public static void Main(string[] args)
     {
+        //call method from examples class to print condition fulfilling array to console
         Examples.printSearch_Char();
+        Examples.printSearch_string();
     }
 }
