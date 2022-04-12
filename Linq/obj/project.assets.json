@@ -27,23 +27,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\17-an180nz\\.nuget\\packages\\": {},
+    "C:\\Users\\bfo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\17-an180nz\\Documents\\Vscode\\C# Linq\\Linq\\Linq.csproj",
+      "projectUniqueName": "C:\\Users\\bfo\\Documents\\Linq\\C--Linq\\Linq\\Linq.csproj",
       "projectName": "Linq",
-      "projectPath": "C:\\Users\\17-an180nz\\Documents\\Vscode\\C# Linq\\Linq\\Linq.csproj",
-      "packagesPath": "C:\\Users\\17-an180nz\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\17-an180nz\\Documents\\Vscode\\C# Linq\\Linq\\obj\\",
+      "projectPath": "C:\\Users\\bfo\\Documents\\Linq\\C--Linq\\Linq\\Linq.csproj",
+      "packagesPath": "C:\\Users\\bfo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\bfo\\Documents\\Linq\\C--Linq\\Linq\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\17-an180nz\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\bfo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -58,8 +58,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\17-an180nz\\Documents\\Vscode\\C# Linq\\LinqLibrary\\LinqLibrary.csproj": {
-              "projectPath": "C:\\Users\\17-an180nz\\Documents\\Vscode\\C# Linq\\LinqLibrary\\LinqLibrary.csproj"
+            "C:\\Users\\bfo\\Documents\\Linq\\C--Linq\\LinqLibrary\\LinqLibrary.csproj": {
+              "projectPath": "C:\\Users\\bfo\\Documents\\Linq\\C--Linq\\LinqLibrary\\LinqLibrary.csproj"
             }
           }
         }
