@@ -5,7 +5,8 @@ class Examples
     public static char InvalidCharUserInput()
     {
         char contains;
-        while(!char.TryParse(Console.ReadLine(), out contains)){
+        while(!char.TryParse(Console.ReadLine(), out contains))
+        {
             Console.WriteLine("Invalid input. Please enter a character: ");
         }
         return contains;
@@ -17,18 +18,18 @@ class Examples
         //create a stopwatch from the System.Diagnostics namespace
         var watch = new Stopwatch();
         Console.WriteLine("Enter a string to search for: ");
-        //get the string to search for from the user
         string contains = Console.ReadLine();
 
         //start the Stopwatch to time the method
         watch.Start();
         //call the method to search for the string and store the result in a list of string
         //The input array is initialized and given values within the methods parameters
-        List<String> result = LinqSearch.ReturnIfContains(new List<string> { "abc", "abc", "abc", "abc", "abc", "abc", "def", "ghi", "jkl", "mno", "pqr", "stu", "vwx", "yz" }, contains);
+        List<String> result = LinqSearch.ReturnIfContains(new List<string> { "abc", "abc", "abc", "abc", "abc", 
+                                                                            "abc", "def", "ghi", "jkl", "mno", 
+                                                                            "pqr", "stu", "vwx", "yz" }, contains);
         //End the Stopwatch and return the elapsed time
         watch.Stop();
         Console.WriteLine($"Time elapsed for method: {watch.ElapsedMilliseconds} ms");
-        //iterate through the list of strings and print each string to the console
         foreach (var item in result)
         {
             Console.WriteLine(item);
@@ -48,8 +49,9 @@ class Examples
         List<String> str = new List<String>() { "abc", "def", "ghi", "jkl", "mno", "pqr", "stu", "vwx", "yz" };
         String[] strS = new String[] { "ok", "not", "lol", "ok", "not", "lol", "ok", "not", "lol" };
         ArrayList strAL = new ArrayList() { "this", "is", "all", "a", "list", "of", "strings" };
+        
         Console.WriteLine("Enter a character to search for: ");
-        //get the char to search for from the user
+        //get the char through the method
         char contains = InvalidCharUserInput();
         //call the method to search for the char and store the result in a list of string
         List<String> tst = LinqSearch.ReturnIfContains<List<String>>(str, contains);
