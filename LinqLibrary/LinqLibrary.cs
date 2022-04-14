@@ -3,6 +3,7 @@ global using System.Collections;
 global using System.Diagnostics;
 global using System.Collections.Generic;
 global using System.Linq;
+
 namespace LinqLibrary;
 
 public static class LinqSearch

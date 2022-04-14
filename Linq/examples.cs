@@ -11,7 +11,6 @@ class Examples
         }
         return contains;
     }
->>>>>>> dda864b189c9f41146dd02a6a04e73543ac46f54
 
     //Method to debug and test the method ReturnIfContains<T>(T collection, string contains)
     public static void printSearch_string()
