@@ -60,5 +60,4 @@ public static class LinqSearch
         //return the list of strings that contain the search string
         return result;
     }
-    sdrfsdfs
 }
